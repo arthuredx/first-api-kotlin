@@ -40,7 +40,7 @@ class AccountController (private val repository: AccountRepository){
 
     @DeleteMapping("/{id}")
     fun delete(@PathVariable id: Long): ResponseEntity<String> = repository.findById(id).map {
-        repository.deleteById(id)
+        repository.delete(it)
         ResponseEntity.ok("Delete has completed")
     }.orElse(ResponseEntity.notFound().build())
 
