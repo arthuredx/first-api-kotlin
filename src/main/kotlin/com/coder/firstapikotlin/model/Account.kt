@@ -1,4 +1,4 @@
-package com.coder.firstapikotlin
+package com.coder.firstapikotlin.model
 
 import jakarta.persistence.Entity
 import jakarta.persistence.GeneratedValue
